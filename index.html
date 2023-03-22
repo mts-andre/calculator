@@ -15,11 +15,29 @@
   </head>
 
   <body>
+    <!-- Vamos armazenar todo o conteúdo da página em um container-->
     <div class="container">
+
+      <!-- Todos o conteúdo será armazenado em uma mesma row, que conterá outras dentro de si-->
       <div class="row">
+
+        <!-- Ainda falando sobre os elementos pais, vamos adicionar uma col, com display flex e alinhamento central-->
         <div class="col d-flex justify-content-center">
+
+          <!-- E por fim, vamos adicionar uma classe calculadora, onde vamos formatar principalmente o layout-->
           <div class="calculadora">
+
+            <!-- Adicionando um campo texto desabilitado, onde será exibido informações-->
             <input type="text" class="form-control resultado" disabled placeholder="0">
+
+            <!-- Adicionando linhas com conteúdo da calculadora-->
+            <!-- Detalhe:
+                  Vamos adicionar três classes em alguns elementos, sendo elas:
+                  - clear
+                  - zero
+                  - enter
+                  Fizemos isso porque alguns botões de uma calculadora possuem tamanhos variados.
+            -->
             <div class="row">
               <button type="button" class="btn btn-dark btn-lg font-weight-light clear">C</button>
               <button type="button" class="btn btn-dark btn-lg font-weight-light">/</button>
@@ -47,6 +65,7 @@
               <button type="button" class="btn btn-dark btn-lg font-weight-light enter">=</button>
             </div>
 
+            <!-- Vamos adicionar uma margin negativo, por conta de um bug de visualização.-->
             <div class="row" style="margin-top: -60px;">
               <button type="button" class="btn btn-dark btn-lg font-weight-light zero">0</button>
               <button type="button" class="btn btn-dark btn-lg font-weight-light">.</button>
