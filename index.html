@@ -28,7 +28,7 @@
           <div class="calculadora">
 
             <!-- Adicionando um campo texto desabilitado, onde será exibido informações-->
-            <input type="text" class="form-control resultado" disabled placeholder="0">
+            <input type="text" class="form-control resultado" disabled placeholder="0" id="resultado">
 
             <!-- Adicionando linhas com conteúdo da calculadora-->
             <!-- Detalhe:
@@ -41,7 +41,7 @@
             <div class="row">
               <button type="button" class="btn btn-dark btn-lg font-weight-light clear" onclick="calcular('acao', 'C')">C</button>
               <button type="button" class="btn btn-dark btn-lg font-weight-light" onclick="calcular('acao', '/')">/</button>
-              <button type="button" class="btn btn-dark btn-lg font-weight-light" onclick="calcular('acao', 'X')">X</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light" onclick="calcular('acao', '*')">X</button>
             </div>
 
             <div class="row">
@@ -76,6 +76,9 @@
         </div>
       </div>
     </div>
+
+    <!-- Javascript file-->
+    <script src="script.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
